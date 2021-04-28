@@ -1,6 +1,6 @@
         
 
-export default function All_User_Notes({id, name, date, note_details, comments, deleteUserNotes}){
+export default function All_User_Notes({id, name, date, note_details, comments, created_at, updated_at, deleteUserNotes}){
 	return (
 		<div className='usermain'>
 			<h3>DATE: {date}</h3>

@@ -9,14 +9,17 @@ import {useFetch} from './components/useFetch';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
-//const url = "https://jsonplaceholder.typicode.com/todos";
-//const url = "http://localhost/webtech/h/ajax/abc.php";
+const url = "http://localhost:8000/api/get_person_notes";
+
 
 function UserNotes(){
 	
-	//const users = useFetch(url);
-	//const [name, setName] = useState('XYZ');
+	const notes = useFetch(url);
+	//console.log(notes);
+	
 	const [note_list, setUserNotes] = useState(notes);
+
+    //console.log(note_list);
 
 	
 	const addUserNote= (newUserNote)=>{
@@ -47,7 +50,7 @@ function UserNotes(){
 				<Route path='/notelist'>
 					<>
 						{
-		                    note_list.map((user_note, index)=>{
+		                    notes.map((user_note, index)=>{
 		                      return <All_User_Notes key={index} {...user_note} deleteUserNotes={deleteUserNotes} />;
 		                    })
 		                }

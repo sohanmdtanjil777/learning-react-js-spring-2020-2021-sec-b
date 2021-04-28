@@ -10,7 +10,7 @@ export const useFetch = (url)=>{
         const response = await fetch(url);
         const data = await response.json();
         
-        console.log(data);
+        //console.log(data);
         setUsers(data);
         setStatus(false);
     }
@@ -19,5 +19,5 @@ export const useFetch = (url)=>{
     	getUserlist();
     }, []);
     
-    return { status, users };
+    return users;
 }
