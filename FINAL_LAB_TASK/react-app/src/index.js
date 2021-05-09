@@ -1,3 +1,4 @@
+import React from "react" ;
 import {useState} from 'react'; 
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -28,7 +29,7 @@ function UserNotes(){
 
 	
 	const deleteUserNotes= (id)=>{
-		setUserNotes(note_list.filter((user_note)=>user_note.id !=id));
+		setUserNotes(note_list.filter((user_note)=>user_note.id != id));
 	}
 
 	

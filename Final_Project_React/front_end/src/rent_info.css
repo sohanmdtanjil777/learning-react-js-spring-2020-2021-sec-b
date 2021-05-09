@@ -1,0 +1,11 @@
+.rinfo {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #000;
+    
+    width: 500px;
+    height: 100%;
+    border-radius: 5px;
+}

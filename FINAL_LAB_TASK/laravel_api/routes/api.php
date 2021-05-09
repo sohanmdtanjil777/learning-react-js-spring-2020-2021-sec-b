@@ -23,3 +23,5 @@ Route::get('/api/person_info_insert_request', 'digital_diaryController@insert_pe
 Route::get('/get_person_notes', 'digital_diaryController@get_person_notes');
 
 Route::get('/api/delete_person_notes', 'digital_diaryController@delete_person_notes');
+
+
